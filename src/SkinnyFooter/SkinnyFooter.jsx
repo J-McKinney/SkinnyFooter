@@ -12,10 +12,24 @@ class SkinnyFooter extends Component {
   render() {
     return (
       <>
-        <Container>
+        <Container className="skinnyFooter">
           <Row>
-            <Col>Hello World!</Col>
-            <Col>Hello World!</Col>
+            <Col>
+              <ul>
+                <li>Hello World 1</li>
+                <li>Hello World 2</li>
+                <li>Hello World 3</li>
+                <li>Hello World 4</li>
+              </ul>
+            </Col>
+            <Col>
+              <ul>
+                <li>Hello World 5</li>
+                <li>Hello World 6</li>
+                <li>Hello World 7</li>
+                <li>Hello World 8</li>
+              </ul>
+            </Col>
           </Row>
         </Container>
       </>

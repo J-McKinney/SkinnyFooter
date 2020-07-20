@@ -1,0 +1,11 @@
+.skinnyFooter {
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  justify-content: center;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
