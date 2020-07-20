@@ -6,7 +6,7 @@ import "./SkinnyFooter.css";
 
 class SkinnyFooter extends Component {
   componentDidMount() {
-    console.log("Hello World");
+    console.log("Hello-World");
   }
 
   render() {
@@ -16,18 +16,35 @@ class SkinnyFooter extends Component {
           <Row>
             <Col>
               <ul>
-                <li>Hello World 1</li>
-                <li>Hello World 2</li>
-                <li>Hello World 3</li>
-                <li>Hello World 4</li>
+                <li>
+                  <h5>The World Of React 1</h5>
+                </li>
+                <li>
+                  <h5>The World Of React 2</h5>
+                </li>
+                <li>
+                  <h5>The World Of React 3</h5>
+                </li>
+                <li>
+                  <h5>The World Of React 4</h5>
+                </li>
               </ul>
             </Col>
+
             <Col>
               <ul>
-                <li>Hello World 5</li>
-                <li>Hello World 6</li>
-                <li>Hello World 7</li>
-                <li>Hello World 8</li>
+                <li>
+                  <h5>The World Of React 5</h5>
+                </li>
+                <li>
+                  <h5>The World Of React 6</h5>
+                </li>
+                <li>
+                  <h5>The World Of React 7</h5>
+                </li>
+                <li>
+                  <h5>The World Of React 8</h5>
+                </li>
               </ul>
             </Col>
           </Row>

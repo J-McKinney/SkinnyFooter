@@ -9,3 +9,12 @@
 ul {
   list-style: none;
 }
+
+li {
+  padding-top: 10px;
+}
+
+h5 {
+  font-weight: bold;
+  font-style: italic;
+}
