@@ -12,13 +12,12 @@ class SkinnyFooter extends Component {
   render() {
     return (
       <>
-        <footer>
-          <Container className="headerContainer">
-            <Row className="headerRow">
-              <Col className="headerCol">Hello World!!!</Col>
-            </Row>
-          </Container>
-        </footer>
+        <Container className="skinnyFooter">
+          <Row>
+            <Col>Hello World!!!</Col>
+            <Col>Hello World!!!</Col>
+          </Row>
+        </Container>
       </>
     );
   }
