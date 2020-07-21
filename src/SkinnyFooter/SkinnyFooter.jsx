@@ -46,21 +46,30 @@ class SkinnyFooter extends Component {
   render() {
     return (
       <>
-        <Container className="skinnyFooter">
-          <Row>
-            <Col>
-              <div
-                id="menuIconContainer"
-                className={this.state.changeNavBar ? "change" : ""}
-                onClick={this.toggleMenu}
-              >
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-                <div className="bar3"></div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+        <div id="footerWrapper">
+          <Container className="openedBottomMenu">
+            <Row>
+              <Col></Col>
+              <Col></Col>
+            </Row>
+          </Container>
+
+          <Container className="closedSkinnyFooter">
+            <Row>
+              <Col>
+                <div
+                  id="menuIconContainer"
+                  className={this.state.changeNavBar ? "change" : ""}
+                  onClick={this.toggleMenu}
+                >
+                  <div className="bar1"></div>
+                  <div className="bar2"></div>
+                  <div className="bar3"></div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </>
     );
   }
