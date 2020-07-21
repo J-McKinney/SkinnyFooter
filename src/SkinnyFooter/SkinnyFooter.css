@@ -2,12 +2,9 @@
   width: 100%;
   padding-top: 5%;
   padding-bottom: 5%;
-  justify-content: center;
-  text-align: center;
 }
 
-.container {
-  display: inline-block;
+#container {
   cursor: pointer;
 }
 
@@ -19,7 +16,6 @@
   background-color: #333;
   margin: 6px 0;
   transition: 0.4s;
-  /* cursor: pointer; */
 }
 
 .change .bar1 {

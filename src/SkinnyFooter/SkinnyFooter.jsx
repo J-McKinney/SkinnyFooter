@@ -16,14 +16,10 @@ class SkinnyFooter extends Component {
     console.log(this.state.changeNavBar);
   }
 
-  // changeNavBar = (x) => {
-  //   x.classList.onToggle("change");
-  // }
-
   toggleMenu = (e) => {
     e.preventDefault();
     this.setState({ changeNavBar: !this.state.changeNavBar });
-    console.log("Clicked Toggle Button");
+    // console.log("Clicked Toggle Button");
   };
 
   render() {
@@ -32,7 +28,11 @@ class SkinnyFooter extends Component {
         <Container className="skinnyFooter">
           <Row>
             <Col>
-              <div className="container" onClick={this.toggleMenu}>
+              <div
+                id="container"
+                className={this.state.changeNavBar ? "change" : ""}
+                onClick={this.toggleMenu}
+              >
                 <div className="bar1"></div>
                 <div className="bar2"></div>
                 <div className="bar3"></div>
