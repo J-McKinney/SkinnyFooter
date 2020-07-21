@@ -10,11 +10,19 @@ class SkinnyFooter extends Component {
   };
 
   componentDidMount() {
-    console.log(this.state.changeNavBar);
+    if (this.state.changeNavBar === false) {
+      console.log("componentDidMount: Bottom Menu Closed");
+    } else if (this.state.changeNavBar === true) {
+      console.log("componentDidMount: Bottom Menu Opened");
+    }
   }
   componentDidUpdate() {
-    console.log(this.state.changeNavBar);
-    this.openBottomMenu();
+    if (this.state.changeNavBar === false) {
+      console.log("componentDidUpdate: Bottom Menu Closed");
+    } else if (this.state.changeNavBar === true) {
+      console.log("componentDidUpdate: Bottom Menu Opened");
+    }
+    // this.openBottomMenu();
   }
 
   toggleMenu = (e) => {
@@ -22,18 +30,18 @@ class SkinnyFooter extends Component {
     this.setState({ changeNavBar: !this.state.changeNavBar });
   };
 
-  openBottomMenu() {
-    if (this.state.changeNavBar === true) {
-      console.log("Bottom Menu Opened");
-      this.displayBottomMenu();
-    } else if (this.state.changeNavBar === false) {
-      console.log("Bottom Menu Closed");
-    }
-  }
+  // openBottomMenu() {
+  //   if (this.state.changeNavBar === true) {
+  //     console.log("Bottom Menu Opened");
+  //     this.displayBottomMenu();
+  //   } else if (this.state.changeNavBar === false) {
+  //     console.log("Bottom Menu Closed");
+  //   }
+  // }
 
-  displayBottomMenu() {
-    console.log("Displaying Bottom Menu");
-  }
+  // displayBottomMenu() {
+  //   console.log("Displaying Bottom Menu");
+  // }
 
   render() {
     return (
