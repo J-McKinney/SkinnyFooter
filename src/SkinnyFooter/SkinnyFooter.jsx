@@ -42,7 +42,7 @@ class SkinnyFooter extends Component {
           <Row>
             <Col>
               <div
-                id="menuContainer"
+                id="menuIconContainer"
                 className={this.state.changeNavBar ? "change" : ""}
                 onClick={this.toggleMenu}
               >
