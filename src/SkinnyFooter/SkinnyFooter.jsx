@@ -9,13 +9,31 @@ class SkinnyFooter extends Component {
     changeNavBar: false,
   };
 
-  componentDidMount() {}
-  componentDidUpdate() {}
+  componentDidMount() {
+    console.log(this.state.changeNavBar);
+  }
+  componentDidUpdate() {
+    console.log(this.state.changeNavBar);
+    this.openBottomMenu();
+  }
 
   toggleMenu = (e) => {
     e.preventDefault();
     this.setState({ changeNavBar: !this.state.changeNavBar });
   };
+
+  openBottomMenu() {
+    if (this.state.changeNavBar === true) {
+      console.log("Bottom Menu Opened");
+      this.displayBottomMenu();
+    } else if (this.state.changeNavBar === false) {
+      console.log("Bottom Menu Closed");
+    }
+  }
+
+  displayBottomMenu() {
+    console.log("Displaying Bottom Menu");
+  }
 
   render() {
     return (
@@ -24,7 +42,7 @@ class SkinnyFooter extends Component {
           <Row>
             <Col>
               <div
-                id="container"
+                id="menuContainer"
                 className={this.state.changeNavBar ? "change" : ""}
                 onClick={this.toggleMenu}
               >
