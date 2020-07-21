@@ -9,7 +9,6 @@
 .container {
   display: inline-block;
   cursor: pointer;
-  object-fit: contain;
 }
 
 .bar1,

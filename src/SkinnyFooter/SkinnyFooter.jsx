@@ -10,15 +10,20 @@ class SkinnyFooter extends Component {
   };
 
   componentDidMount() {
-    // console.log("Hello-World");
+    console.log(this.state.changeNavBar);
+  }
+  componentDidUpdate() {
+    console.log(this.state.changeNavBar);
   }
 
   // changeNavBar = (x) => {
   //   x.classList.onToggle("change");
   // }
 
-  toggleMenu = () => {
-    console.log("Clicked Toggle Button")
+  toggleMenu = (e) => {
+    e.preventDefault();
+    this.setState({ changeNavBar: !this.state.changeNavBar });
+    console.log("Clicked Toggle Button");
   };
 
   render() {
