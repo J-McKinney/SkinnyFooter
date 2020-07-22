@@ -7,8 +7,6 @@ import "./SkinnyFooter.css";
 
 class SkinnyFooter extends Component {
   state = {
-    open: false,
-    setOpen: false,
     changeNavBar: false,
   };
 
