@@ -4,6 +4,14 @@
   padding-bottom: 2%;
 }
 
+.dropDownButton {
+  background-color: #ffffff;
+}
+
+#dropdown-basic {
+  float: right;
+}
+
 #menuIconContainer {
   cursor: pointer;
   float: right;
