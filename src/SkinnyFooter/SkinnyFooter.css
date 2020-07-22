@@ -5,6 +5,7 @@
 }
 
 .dropDownButton {
+  display: inline-block;
   background-color: #ffffff;
 }
 
